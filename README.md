@@ -1,0 +1,1 @@
+A simple folder structure to give a starting place when making a new mod for RimWorld. Pre-filled with About.xml to edit, blank ModIcon.png and Preview.png for the right resolution. Also filled with Help.txt files to give guidance on what to do in each section. Most of the information comes from the RimWorld Wiki on how to make a mod. 
