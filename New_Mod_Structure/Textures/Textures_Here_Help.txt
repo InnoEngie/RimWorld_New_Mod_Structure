@@ -1,0 +1,5 @@
+The Textures folder is used to hold custom texture files for mods. It is generally recommended to use PNG files. Please see the Textures guide (https://rimworldwiki.com/wiki/Modding_Tutorials/Textures) for more information.
+
+Just like sounds, texture files in RimWorld are identified by their path names; if a mod contains a texture file with the same path and file name as another mod or even the vanilla game or DLCs, then the last one to be loaded in your mod list will overwrite the others. This is sometimes done intentionally by re-texture mods that want to change textures from the vanilla game or other mods.
+
+To avoid accidental collisions, it's recommended to prefix either your file names or use a namespace folder to reduce the chance that you have the exact same path as another mod.

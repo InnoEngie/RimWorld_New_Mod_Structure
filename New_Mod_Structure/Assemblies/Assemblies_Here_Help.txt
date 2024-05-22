@@ -1,0 +1,1 @@
+The Assemblies folder can be used to add custom code to RimWorld in the form of compiled dynamic-link library or DLL files. Properly compiled assemblies will be automatically loaded by RimWorld.

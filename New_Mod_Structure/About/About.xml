@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Master About file. Uncomment the sections needed. -->
+<ModMetaData>
+<!-- The title of your mod. While the name of your mod does not need to be globally unique and most references to mods are now using packageId, PatchOperationFindMod still uses mod names and thus you should avoid changing the name of your mod unless absolutely necessary. -->
+    <name>My Mod Name</name>
+
+
+<!-- The author of this mod, usually yourself. More than one author can be specified by separating names with commas or by using list nodes. -->
+	<author>Author Name, Another Author Name, A Third Author Name</author>
+
+
+<!-- The plain-text description of your mod. This is used as both the content description of your mod in mod managers (including the vanilla mod manager) as well as the initial description of your mod if uploaded to Steam Workshop. In the latter case, you can change your Workshop item description independent of the mod itself, thus it is generally recommended that you keep the description of your mod in About.xml relatively short. -->
+	<description>This is the description of this mod.</description>
+
+
+<!-- The RimWorld versions that your mod supports. A warning will be given to the player if attempting to load the mod under a version you have not explicitly specified support for, but this does not prevent players from loading the mod if they so choose.
+
+It is strongly recommended that you only specify support for versions that you have explicitly tested compatibility for; RimWorld has changed dramatically between versions in the past and even XML-only mods may not be guaranteed to work without version-specific changes. -->
+    <supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+
+
+<!-- The internal identifier for your mod, used to identify your mod as a dependency, load order helper, or with MayRequire attributes. packageIds should be alphanumeric with at least one period separating two strings. It is usually recommended that you use YourName.YourModName, YourProjectName.YourModName, YourName.YourSeriesName.YourModName, or something similar.
+
+packageId must be globally unique across all mods. If RimWorld encounters more than one mod with the same packageId, even if they are not in your current mod list, then an error will be thrown and only the first mod will be usable. The only time that using the same packageId is recommended is if you are forking or continuing a mod and want it to act as a drop-in replacement. In such cases, players must unsubscribe from the original mod to be able to use yours.
+
+Note: packageId is case-insensitive as RimWorld will internally convert all IDs to lowercase; capitalization is done for readability, but two IDs that are identical other than case will resolve as identical. -->
+	<packageId>AuthorName.ModName</packageId>
+
+
+<!-- A version string for your own personal version tracking.Sub 1.0 is dev versions. 1.0 is release. Super 1.0 is updates and fixes. -->
+	<modVersion>1.0</modVersion>
+
+
+<!-- A web link that can be displayed with your mod info. This can be any link, though most mods will link to their primary download source, such as a Steam Workshop page, GitHub repository, or Ludeon Forum link. -->
+	<url>https://steamcommunity.com/workshop/filedetails/?id=2009463077</url>
+
+
+<!-- Used to specify dependencies for your mod. Players will be warned if a dependency for your mod is not loaded in their mod list, though players may choose to ignore it.
+
+Note that this is not automatically used by Steam Workshop; if you want players to be notified that they should download a dependency, you must add that via Steam Workshop's "Required Items" feature. -->
+<!--	
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+-->
+
+
+<!-- Used to specify mods that your mod should load before. RimWorld will warn the player if your mod is not in the correct place in their mod list.
+
+Mods specified this way must be referenced by their packageId. -->
+<!--	
+	<loadBefore>
+		<li>CETeam.CombatExtended</li>
+	</loadBefore>
+-->
+
+
+<!-- Used to specify mods that your mod should load after. RimWorld will warn the player if your mod is not in the correct place in their mod list.
+
+Mods specified this way must be referenced by their packageId. -->
+<!--	
+	<loadAfter>
+		<li>erdelf.HumanoidAlienRaces</li>
+	</loadAfter>
+-->
+
+
+<!-- Used to specify mods that your mod is incompatible with. Players will be warned if the specified mods are loaded at the same time that your mod is.
+
+This should generally only be used to specify mods that are fundamentally incompatible with your mod rather than mods that simply have bugs related to your mod. -->
+<!--	
+	<incompatibleWith>
+		<li>CETeam.CombatExtended</li>
+	</incompatibleWith>
+-->
+</ModMetaData>

@@ -1,0 +1,5 @@
+The Sounds folder is used to hold custom sound files for mods. It is generally recommended to use Ogg files, though Unity can also recognize and use MP3 and WAV files. Please see the Sounds guide (https://rimworldwiki.com/wiki/Modding_Tutorials/Sounds) for more information.
+
+Just like textures, sound files in RimWorld are identified by their path names; if a mod contains a sound file with the same path and file name as another mod or even the vanilla game or DLCs, then the last one to be loaded in your mod list will overwrite the others. This is sometimes done intentionally by mods that want to change vanilla or other mod's audio.
+
+To avoid accidental collisions, it's recommended to prefix either your file names or use a namespace folder to reduce the chance that you have the exact same path as another mod.
