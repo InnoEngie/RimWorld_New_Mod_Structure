@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- If needed, rename this file from LoadFolders.txt to LoadFolders.xml -->
+
+<!-- LoadFolders.xml allows you to specify exactly which folders should be loaded for given versions of RimWorld. This supersedes the default versioned folder rules as specified above for all versions of RimWorld except v1.0, which means that you will need to specify the root or Common folders if you wish to use them. An example file is shown here: -->
+
+<!--
+<loadFolders>
+	<v1.3>
+		<li>/</li>
+		<li>1.3</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">Ideology/1.3</li>
+		<li IfModActive="CETeam.CombatExtended">CombatExtended/1.3</li>
+	</v1.3>
+	<v1.4>
+		<li>/</li>
+		<li>1.4</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">Ideology/1.4</li>
+		<li IfModActive="CETeam.CombatExtended">CombatExtended/1.4</li>
+	</v1.4>
+</loadFolders>
+-->
+
+<!-- This example file specifies that the root folder and a versioned folder should be loaded for RimWorld v1.3 and v1.4, and optionally loads extra folders based on whether the Ideology DLC and/or Combat Extended mods are loaded. -->
+
+<!-- Folders that should be loaded if mods and DLCs are not loaded can also be specified using IfModNotActive. Mods and DLCs specified using IfModActive or IfModNotActive -->
+
+<!-- If you have files with the same relative path, then the last one specified by your load order will be used. Thus in the above example setup, if you had Defs/MyFile.xml, 1.4/Defs/MyFile.xml, and Ideology/1.4/Defs/MyFile.xml, then the Ideology version would be loaded. This applies to all XML files (both Defs and Patches), Sounds, Textures, and Language files. -->
+
+<!-- If you have both a local version of the mod, as well as the steam version, you will need to qualify the steam version with _steam for requiring it to test out compatibility with the steam version. In the example above, IfModActive="CETeam.CombatExtended" would become IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam" to support both a local mod version of Combat Extended as well as the steam version. -->
