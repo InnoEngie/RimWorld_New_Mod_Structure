@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--The above line is the start of every XML file. Just ignore it-->
+
+<!--============================================================-->
 <!-- Master About file. Uncomment the sections needed. -->
+<!--============================================================-->
+
 <ModMetaData>
 <!-- The title of your mod. While the name of your mod does not need to be globally unique and most references to mods are now using packageId, PatchOperationFindMod still uses mod names and thus you should avoid changing the name of your mod unless absolutely necessary. -->
     <name>My Mod Name</name>
@@ -29,11 +34,20 @@ Note: packageId is case-insensitive as RimWorld will internally convert all IDs 
 	<packageId>AuthorName.ModName</packageId>
 
 
-<!-- A version string for your own personal version tracking.Sub 1.0 is dev versions. 1.0 is release. Super 1.0 is updates and fixes. -->
+<!-- A version string for your own personal version tracking. Version information for a mod consists of the following four values:
+	1: Major Version
+	2: Minor Version
+	3: Build Number
+	4: Revision
+	
+	Or version information for a mod consists of the following two values:
+	1: Major Version
+	2: Minor Version
+-->
+	<!--modVersion>1.0.0.0</modVersion-->
 	<modVersion>1.0</modVersion>
 
-
-<!-- A web link that can be displayed with your mod info. This can be any link, though most mods will link to their primary download source, such as a Steam Workshop page, GitHub repository, or Ludeon Forum link. -->
+<!-- A web link that can be displayed with your mod info. This can be any link, though most mods will link to their primary download source, such as a Steam Workshop page, GitHub repository, or Ludeon Forum link. This example url points to Harmony.-->
 	<url>https://steamcommunity.com/workshop/filedetails/?id=2009463077</url>
 
 
